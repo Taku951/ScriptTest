@@ -13,9 +13,10 @@ public class Test : MonoBehaviour {
         //魔法攻撃関数
         public void Magic()
         {
-            this.mp -= 5;
+            
             if (this.mp >= 5)
             {
+                this.mp -= 5;
                 Debug.Log("魔法攻撃をした。残りMPは" + this.mp);
             }
             else
@@ -46,7 +47,7 @@ public class Test : MonoBehaviour {
         }
 
         //魔法を十回繰り返す
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i <= 10; i++)
         {
             magic.Magic();
         }
